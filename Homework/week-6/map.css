@@ -1,0 +1,23 @@
+/*
+Urscha Fajdiga 11377437
+This file is styles the map.html page
+*/
+body {text-align: center; font-family: verdana; font-size: 12px}
+
+h1 {color: grey; text-align:center; font-family: verdana}
+
+h2 {color: silver; text-align:center; font-family: verdana}
+
+p {text-align: center; font-family: verdana; font-size: 12px}
+
+.datamaps-legend {width: 180px; position: relative; margin-top: -200px}
+
+.datasource {text-align: left; width: 150px}
+
+li {text-align: left}
+
+#container {width: 1053px; position: relative; height: 800px; margin: auto}
+
+#extra_text {padding-top: 40px; align: center; width: 750px; margin: auto}
+
+.tooltip { position: absolute; width: 150px; height: 28px; pointer-events: none; text-align: left}

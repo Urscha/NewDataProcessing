@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+	Name: Urscha Fajdiga
+	Student number: 11377437
+	This HTML file shows an interactive map of GDP for each coountry in the world
+//-->
+<html lang="en">
+	<head>
+		<title>Urscha's interactive map</title>
+		<link rel="stylesheet" type="text/css" href="map.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="datamaps.world.min.js"></script>
+		<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+		<script type="text/javascript" src="map.js"></script>
+	</head>
+	<body>
+		<h1>Homework week 4</h1>
+		<h2>How does happiness relate to GDP per capita?</h2>
+		<p>Urscha Fajdiga, 11377437</p>
+		<p>GDP per capita in 2014 in USD</p>
+		<div id="container"></div>
+		<div id="scatterplotcontainer">
+			<svg id="scatterplot"></svg>
+		</div>
+		<div id="extra_text">
+			<p id="explanation">
+			How does happiness relate to GDP per capita? Click on a country on the world map, to see where it is located on the scatterplot.
+			You can also hover over the dots on the scatterplot to see which country it is, as well ass the happiness level and GDP per capita.
+			</p>
+			<p class="datasource">Link to data sources: 
+				<ul>
+					<li><a href="http://data.un.org/Data.aspx?q=GDP+per+capita&d=SNAAMA&f=grID%3a101%3bcurrID%3aUSD%3bpcFlag%3a1">Map data</a></li>
+					<li><a href="https://ourworldindata.org/happiness-and-life-satisfaction/">Scatterplot data</a></li>
+				</ul>
+			</p>
+		</div>
+	</body>
+</html>

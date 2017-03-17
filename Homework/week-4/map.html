@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+	Name: Urscha Fajdiga
+	Student number: 11377437
+	This HTML file shows an interactive map of GDP for each coountry in the world
+//-->
+<html lang="en">
+	<head>
+		<title>Urscha's interactive map</title>
+		<link rel="stylesheet" type="text/css" href="map.css">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+		<script src="datamaps.world.min.js"></script>
+		<script type="text/javascript" src="map.js"></script>
+	</head>
+	<body>
+		<h1>Homework week 4</h1>
+		<h2>My map</h2>
+		<p>Urscha Fajdiga, 11377437</p>
+		<p>GDP Per Country in 2014 in USD</p>
+		<div id="container"></div>
+		<div id="extra_text">
+			<p id="explanation">The mouse-over effects that I chose, are to show the country name and the GDP for that specific country. 
+			The ordinal data is shown by color, for which I chose a red-pastel color. Which is more easily
+			readable and easier to look at. I chose to go with 5 categories since with more categories, 
+			the colors would be too similar and the difference would be less visible.
+			I also added a legend to the visualization since it helps to understand the data.
+			</p>
+			<p class="datasource">Link to data source: <a href="http://data.un.org/Data.aspx?q=GDP+per+capita&d=SNAAMA&f=grID%3a101%3bcurrID%3aUSD%3bpcFlag%3a1">Click here!</a></p>
+		</div>
+	</body>
+</html>

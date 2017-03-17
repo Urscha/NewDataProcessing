@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+	Name: Urscha Fajdiga
+	Student number: 11377437
+	This HTML file shows an interactive map of GDP for each coountry in the world
+//-->
+<html lang="en">
+	<head>
+		<title>Urscha's multiple data view</title>
+		<link rel="stylesheet" type="text/css" href="d3line.css">
+		<script src="d3.js"></script>
+		<script src="http://d3js.org/queue.v1.min.js"></script>
+		<script src="d3line.js"></script>
+	</head>
+	<body>
+		<h1>Homework week 4</h1>
+		<p>Urscha Fajdiga, 11377437</p>
+		<p>Average, minimum and maximum temperature during 2016 in Maastricht and Wijk aan Zee</p>
+		<svg class="linechart"></svg>
+		<div id="options">
+			<h4>Select the lines to include:</h4>
+			<label class="checkbox">
+				<input type="checkbox" class="checkbox1" checked="checked" value="line_maastricht_gem">Maastricht average temp.
+				<span style="background-color:#bd0026;height:0.9em;width:0.9em;margin-right:0.25em;display:inline-block;"/>
+			</label><br>
+			<label class="checkbox">
+				<input type="checkbox" checked= "checked" class="Maastricht_minimum" value="line_maastricht_min">Maastricht minimum temp.
+				<span style="background-color:#fecc5c;height:0.9em;width:0.9em;margin-right:0.25em;display:inline-block;"/>
+			</label><br>
+			<label class="checkbox">
+				<input type="checkbox" checked= "checked" class="Maastricht_maximum" value="line_maastricht_max">Maastricht maximum temp.
+				<span style="background-color:#fd8d3c;height:0.9em;width:0.9em;margin-right:0.25em;display:inline-block;"/>
+			</label><br>
+			<label class="checkbox">
+				<input type="checkbox" checked= "checked" class="Waz_average" value="line_waz_gem">Wijk aan zee average temp.
+				<span style="background-color:#045a8d;height:0.9em;width:0.9em;margin-right:0.25em;display:inline-block;"/>
+			</label><br>
+			<label class="checkbox">
+				<input type="checkbox" checked= "checked" class="Waz_minimum" value="line_waz_min">Wijk aan zee minimum temp.
+				<span style="background-color:#bdc9e1;height:0.9em;width:0.9em;margin-right:0.25em;display:inline-block;"/>
+			</label><br>			
+			<label class="checkbox">
+				<input type="checkbox" checked= "checked" class="Waz_maximum" value="line_waz_max">Wijk aan zee maximum temp.
+				<span style="background-color:#74a9cf;height:0.9em;width:0.9em;margin-right:0.25em;display:inline-block;"/>
+			</label><br>
+			<p class="datasource">Link to data source: <a href="http://projects.knmi.nl/klimatologie/daggegevens/selectie.cgi">Click here!</a></p>
+		</div>
+	</body>
+</html>

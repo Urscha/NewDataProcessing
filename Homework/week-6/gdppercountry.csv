@@ -1,0 +1,208 @@
+id,fillKey,country_or_area,GDP
+AFG,GDP0_5,Afghanistan,668
+ALB,GDP0_5,Albania,4595
+DZA,GDP5_20,Algeria,5496
+AND,GDP40_X,Andorra,46034
+AGO,GDP5_20,Angola,6014
+AIA,GDP20_30,Anguilla,21531
+ATG,GDP5_20,Antigua and Barbuda,14019
+ARG,GDP5_20,Argentina,13279
+ARM,GDP0_5,Armenia,3862
+ABW,GDP20_30,Aruba,25616
+AUS,GDP40_X,Australia,61437
+AUT,GDP40_X,Austria,51471
+AZE,GDP5_20,Azerbaijan,7813
+BHS,GDP20_30,Bahamas,22497
+BHR,GDP20_30,Bahrain,24515
+BGD,GDP0_5,Bangladesh,1088
+BRB,GDP5_20,Barbados,15360
+BLR,GDP5_20,Belarus,8011
+BEL,GDP40_X,Belgium,47367
+BLZ,GDP0_5,Belize,4884
+BEN,GDP0_5,Benin,903
+BMU,GDP40_X,Bermuda,90600
+BTN,GDP0_5,Bhutan,2561
+BOL,GDP0_5,Bolivia (Plurinational State of),3124
+BIH,GDP0_5,Bosnia and Herzegovina,4852
+BWA,GDP5_20,Botswana,7150
+BRA,GDP5_20,Brazil,11729
+IOT,GDP30_40,British Virgin Islands,30501
+BRN,GDP40_X,Brunei Darussalam,41022
+BGR,GDP5_20,Bulgaria,7876
+BFA,GDP0_5,Burkina Faso,716
+BDI,GDP0_5,Burundi,259
+CPV,GDP0_5,Cabo Verde,3661
+KHM,GDP0_5,Cambodia,1090
+CMR,GDP0_5,Cameroon,1407
+CAN,GDP40_X,Canada,50379
+CYM,GDP40_X,Cayman Islands,61681
+CAF,GDP0_5,Central African Republic,365
+TCD,GDP0_5,Chad,942
+CHL,GDP5_20,Chile,14566
+CHN,GDP5_20,China,7692
+COL,GDP5_20,Colombia,7918
+COM,GDP0_5,Comoros,1593
+COG,GDP0_5,Congo,3125
+COK,GDP5_20,Cook Islands,15323
+CRI,GDP5_20,Costa Rica,10437
+CIV,GDP0_5,Cote d'Ivoire,1542
+HRV,GDP5_20,Croatia,13412
+CUB,GDP5_20,Cuba,7088
+CUW,GDP20_30,Curacao,20277
+CYP,GDP20_30,Cyprus,26408
+CZE,GDP5_20,Czech Republic,19712
+PRK,GDP0_5,Korea,696
+DNK,GDP40_X,Denmark,62388
+DJI,GDP0_5,Djibouti,1814
+DMA,GDP5_20,Dominica,7234
+DOM,GDP5_20,Dominican Republic,6147
+ECU,GDP5_20,Ecuador,6432
+EGY,GDP0_5,Egypt,3315
+SLV,GDP0_5,El Salvador,4102
+GNQ,GDP20_30,Equatorial Guinea,26196
+ERI,GDP0_5,Eritrea,793
+EST,GDP5_20,Estonia,19916
+ETH,GDP0_5,Ethiopia,560
+FJI,GDP5_20,Fiji,5042
+FIN,GDP40_X,Finland,49723
+FRA,GDP40_X,France,42801
+PYF,GDP20_30,French Polynesia,21586
+GAB,GDP5_20,Gabon,10317
+GMB,GDP0_5,Gambia,440
+GEO,GDP0_5,Georgia,4092
+DEU,GDP40_X,Germany,48102
+GHA,GDP0_5,Ghana,1397
+GRC,GDP20_30,Greece,21460
+GRL,GDP40_X,Greenland,43430
+GRD,GDP5_20,Grenada,8313
+GTM,GDP0_5,Guatemala,3667
+GIN,GDP0_5,Guinea,723
+GNB,GDP0_5,Guinea-Bissau,570
+GUY,GDP0_5,Guyana,4028
+HTI,GDP0_5,Haiti,819
+HND,GDP0_5,Honduras,2449
+HUN,GDP5_20,Hungary,14085
+ISL,GDP40_X,Iceland,52486
+IND,GDP0_5,India,1580
+IDN,GDP0_5,Indonesia,3500
+IRN,GDP5_20,Iran,5443
+IRQ,GDP5_20,Iraq,5465
+IRL,GDP40_X,Ireland,54815
+ISR,GDP30_40,Israel,38890
+ITA,GDP30_40,Italy,35957
+JAM,GDP0_5,Jamaica,4993
+JPN,GDP30_40,Japan,38241
+JOR,GDP0_5,Jordan,4831
+KAZ,GDP5_20,Kazakhstan,12746
+KEN,GDP0_5,Kenya,1368
+KIR,GDP0_5,Kiribati,1684
+KWT,GDP40_X,Kuwait,43339
+KGZ,GDP0_5,Kyrgyzstan,1278
+LAO,GDP0_5,Lao People's Democratic Republic,1772
+LVA,GDP5_20,Latvia,15744
+LBN,GDP5_20,Lebanon,8676
+LSO,GDP0_5,Lesotho,1034
+LBR,GDP0_5,Liberia,458
+LBY,GDP5_20,Libya,7684
+LIE,GDP40_X,Liechtenstein,178723
+LTU,GDP5_20,Lithuania,16657
+LUX,GDP40_X,Luxembourg,117454
+MDG,GDP0_5,Madagascar,453
+MWI,GDP0_5,Malawi,357
+MYS,GDP5_20,Malaysia,11306
+MDV,GDP5_20,Maldives,8657
+MLI,GDP0_5,Mali,842
+MLT,GDP20_30,Malta,25704
+MHL,GDP0_5,Marshall Islands,3530
+MRT,GDP0_5,Mauritania,1434
+MUS,GDP5_20,Mauritius,9943
+MEX,GDP5_20,Mexico,10326
+FSM,GDP0_5,Micronesia (Federated States of),3057
+MCO,GDP40_X,Monaco,187650
+MNG,GDP0_5,Mongolia,4202
+MNE,GDP5_20,Montenegro,7337
+MSR,GDP5_20,Montserrat,11579
+MAR,GDP0_5,Morocco,3243
+MOZ,GDP0_5,Mozambique,623
+MMR,GDP0_5,Myanmar,1241
+NAM,GDP5_20,Namibia,5349
+NRU,GDP5_20,Nauru,17857
+NPL,GDP0_5,Nepal,701
+NLD,GDP40_X,Netherlands,52148
+NCL,GDP30_40,New Caledonia,39398
+NZL,GDP40_X,New Zealand,44207
+NIC,GDP0_5,Nicaragua,1960
+NER,GDP0_5,Niger,431
+NGA,GDP0_5,Nigeria,3203
+NOR,GDP40_X,Norway,96803
+OMN,GDP5_20,Oman,19130
+PAK,GDP0_5,Pakistan,1340
+PLW,GDP5_20,Palau,11092
+PAN,GDP5_20,Panama,12712
+PNG,GDP0_5,Papua New Guinea,2975
+PRY,GDP0_5,Paraguay,4713
+PER,GDP5_20,Peru,6538
+PHL,GDP0_5,Philippines,2873
+POL,GDP5_20,Poland,14116
+PRT,GDP20_30,Portugal,22075
+PRI,GDP20_30,Puerto Rico,27692
+QAT,GDP40_X,Qatar,94944
+KOR,GDP20_30,Republic of Korea,28185
+MDA,GDP0_5,Republic of Moldova,1960
+ROU,GDP5_20,Romania,10143
+RUS,GDP5_20,Russian Federation,14160
+RWA,GDP0_5,Rwanda,697
+KNA,GDP5_20,Saint Kitts and Nevis,15430
+LCA,GDP5_20,Saint Lucia,7649
+VCT,GDP5_20,Saint Vincent and the Grenadines,6656
+WSM,GDP0_5,Samoa,4296
+SMR,GDP40_X,San Marino,58390
+STP,GDP0_5,Sao Tome and Principe,1968
+SAU,GDP20_30,Saudi Arabia,24406
+SEN,GDP0_5,Senegal,1043
+SRB,GDP5_20,Serbia,6203
+SYC,GDP5_20,Seychelles,14074
+SLE,GDP0_5,Sierra Leone,794
+SGP,GDP40_X,Singapore,55635
+SXM,GDP20_30,Sint Maarten (Dutch part),28085
+SVK,GDP5_20,Slovakia,18581
+SVN,GDP20_30,Slovenia,23973
+SLB,GDP0_5,Solomon Islands,1924
+SOM,GDP0_5,Somalia,149
+ZAF,GDP5_20,South Africa,6509
+SSD,GDP0_5,South Sudan,1348
+ESP,GDP20_30,Spain,29742
+LKA,GDP0_5,Sri Lanka,3881
+PSE,GDP0_5,State of Palestine,2800
+SDN,GDP0_5,Sudan,1762
+SUR,GDP5_20,Suriname,9737
+SWZ,GDP0_5,Swaziland,3540
+SWE,GDP40_X,Sweden,59137
+CHE,GDP40_X,Switzerland,85577
+SYR,GDP0_5,Syrian Arab Republic,1816
+TJK,GDP0_5,Tajikistan,1113
+THA,GDP5_20,Thailand,5970
+MKD,GDP5_20,The former Yugoslav Republic of Macedonia,5474
+TLS,GDP0_5,Timor-Leste,3607
+TGO,GDP0_5,Togo,643
+TON,GDP0_5,Tonga,4122
+TTO,GDP20_30,Trinidad and Tobago,20131
+TUN,GDP0_5,Tunisia,4277
+TUR,GDP5_20,Turkey,10299
+TKM,GDP5_20,Turkmenistan,8194
+TCA,GDP20_30,Turks and Caicos Islands,23615
+TUV,GDP0_5,Tuvalu,3796
+UGA,GDP0_5,Uganda,750
+UKR,GDP0_5,Ukraine,2967
+ARE,GDP40_X,United Arab Emirates,44239
+GBR,GDP40_X,United Kingdom of Great Britain and Northern Ireland,46615
+TZA,GDP0_5,United Republic of Tanzania: Mainland,955
+USA,GDP40_X,United States,54447
+URY,GDP5_20,Uruguay,16738
+UZB,GDP0_5,Uzbekistan,2139
+VUT,GDP0_5,Vanuatu,3148
+VEN,GDP5_20,Venezuela (Bolivarian Republic of),11835
+VNM,GDP0_5,Viet Nam,2015
+YEM,GDP0_5,Yemen,1299
+ZMB,GDP0_5,Zambia,1726
+ZWE,GDP0_5,Zimbabwe,931

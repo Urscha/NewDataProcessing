@@ -1,0 +1,22 @@
+h1 {color: grey; text-align:center; font-family: verdana}
+
+h2 {color: silver; text-align:center; font-family: verdana}
+
+p {text-align: center; font-family: verdana}
+
+.barchart text {
+  font: 10px sans-serif;
+}
+
+svg {
+	display: block;
+	margin: auto;
+}
+
+.tooltip {
+	margin: 0 auto;
+}
+
+text {
+	color: black;
+}
