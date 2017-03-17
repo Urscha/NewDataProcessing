@@ -3,6 +3,7 @@
 
 window.onload = function() {
 	
+	// queue both csv files
 	d3.queue()
 		.defer(d3.csv, 'gdppercountry.csv')
 		.defer(d3.csv, 'happinessindex.csv')
@@ -54,9 +55,9 @@ window.onload = function() {
 			}
 		});
 		
+		// this function makes the dots red in the scatterplot and the old dot black
 		var old_id;
 		chloropleth.svg.selectAll("path.datamaps-subunit").on("click", function(data) {
-			console.log(data.id);
 			if (old_id == undefined){
 				d3.select("#" + data.id).style("fill", "red").attr("r", 8);
 				old_id = data.id;
@@ -76,16 +77,12 @@ window.onload = function() {
 		width = 800 - margin.left - margin.right,
 		height = 350 - margin.top - margin.bottom;
 		
-		// setup x
+		// setup x and y
 		var x = d3.scale.linear().range([0, width]),
 			y = d3.scale.linear().range([height, 0]);
-		
-		var color = d3.scale.category10();
-		
 		var x_axis = d3.svg.axis().scale(x).orient("bottom"),
 			y_axis = d3.svg.axis().scale(y).orient("left");
-			
-			
+				
 		// add scatterplot
 		var scatterplot = d3.select("#scatterplot")
 			.attr("width", width + margin.left + margin.right)
@@ -134,7 +131,7 @@ window.onload = function() {
 			  .style("text-anchor", "end")
 			  .text("Happiness index");
 			
-			// draw dots
+			// draw dots with tooltip
 			scatterplot.selectAll(".dot")
 			  .data(data)
 			.enter().append("circle")
