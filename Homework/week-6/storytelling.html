@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+	<title>Urscha's interactive visualisations</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="map.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+	<script src="datamaps.world.min.js"></script>
+	<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="map.html">Urscha's visualisations</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="map.html">Home</a></li>
+      <li class="active"><a href="storytelling.html">Storytelling</a></li>
+      <li><a href="design.html">Design choices</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-2 text-center">
+	<h1>Storytelling</h1>
+	<h2>How does happiness relate to GDP per capita?</h2>
+		<div class="storytelling">
+			<p>Does money make people more happy? That is a question that everyone (or a lot of people) would like to know the answer to.
+			I wanted to tell the story of the relationship between happiness and GPD and if it is true, that people that live in more 'wealthy' countries
+			in de the world, are happier compared to people who live in poorer countries. </p><p>With my visualisations, I first show the world-map including GPD
+			per capita for most of the countries in the world. This is the value of all final goods and services produced within a nation in a given year, 
+			converted at market exchange rates to current U.S. dollars, divided by the average (or mid-year) population for the same year.
+			However, it does not take cost of living into account per country. So these figures can give a rough estimation of the standard
+			of living for each country, but it is not a measure of personal income.
+			</p>
+			<p>Then, in my second visualisation, I show the happiness score for most countries of the world. Here, life evaluation was measured by the 
+			individual answers to the Cantril ladder question: “Please imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. 
+			The top of the ladder represents the best possible life for you and the bottom of the ladder represents the worst possible life for you. 
+			On which step of the ladder would you say you personally feel you stand at this time?”. 
+			</p>
+			<p>If you look at the scatterplot, you can see there is a positive linear relationship between GDP per capita and happiness. Therefore,
+			I think I made the point, with these visualisations, that living in a more wealthy countrie, does increase your happiness.</p>
+			<img src="happiness.png">
+			<h2>Functionality</h2>
+			<p>I wanted it to be easy for a user to have a country in mind and see the GDP per capita for that country and where the 'happiness' of that country is located. 
+			Therefore I made an interactive map where you can hover over a country to see the exact GDP per capita and when you click on that country, it shows where
+			the country is located when it comes to happiness (in the scatterplot).</p>
+			<h2>Storytelling genre</h2>
+			<p>The genre that I used for my story was the 'annotated chart'. </p>
+		</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
+
+</body>
+</html>
