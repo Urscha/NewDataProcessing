@@ -1,8 +1,10 @@
+<!-- Urscha Fajdiga 11377437 -->
+<!-- This page explains the design choices made for this homework asignment -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-	<title>Urscha's interactive visualisations</title>
+	<title>Design choices</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,6 +16,8 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 	<script src="datamaps.world.min.js"></script>
 	<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/bootstrap-slider.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.7.2/css/bootstrap-slider.css" />
 	<script type="text/javascript" src="map.js"></script>
 </head>
 <body>
@@ -34,9 +38,29 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
 	<h1>Design choices</h1>
-	<h2>What makes a good design?</h2>
-		<div>
-			<p>Does money make people more happy? </p>
+	<h2>Steps of the design process</h2>
+	<div class="storytelling">
+		<ul>
+			<li>Fist step in the design process was to design the page. I decided to put the title at the top and change the font. Below that 
+			i decided to put both graphs. I decided to put them below each other because in that way, the choropleth could be big enough to still
+			see the smaller countries. </li>
+			<li>When I designed the choropleth, I used the color brewer to get 5 sequential colors because the data of the GDP is sequential. When I first
+			made the choropleth, I made took the maximum and minimum value of the GDP per country and divided it by 5 to get the groups. But then most countries 
+			fell in the first two groups. Therefore I changed the range for the data groups so that the countries were more evenly divided over the 'colors'.</li>
+			<li>I also added a legend to the choropleth, since that is important to understand the data. I also added tooltips while hovering over a country to 
+			enable the users to see exactly what GDP per capita each country has.</li>
+			<li>After designing the choropleth, I made the scatterplot. In order to reduce data-ink ratio, I made a basic scatterplot. I choose black for the 
+			color of the dots, but the highlighted dots are red, to stick to the color scheme of the choropleth. I made the dots not too big and not too small 
+			because you have to be able to hover over them (to show the tooltip) but if they are too big, the highlighted doesn't stand out as much.</li>
+			<li>At the bottom of the page I added some text to explain the visualisations, as well as the links to the data sources I used. </li>
+		</ul>
+		<h2>Interaction design</h2>
+		<ul>
+			<li>The interaction I used is that when you click on a country in the choropleth, the dot in the scatterplot of that country is highlighted. In that way
+			you can see how that country is located when looking at GDP per country compared to other countries in the world and also how the inhabitants of that country
+			rate their happiness. So when the country is clicked, the style of the dot that was clicked before is changed back to black and the current
+			country becomes red.</li>
+		</ul>
 		</div>
 </div>
 

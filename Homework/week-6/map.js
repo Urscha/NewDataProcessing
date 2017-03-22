@@ -9,40 +9,42 @@ window.onload = function() {
 		.defer(d3.csv, 'happinessindex.csv')
 		.await(make_maps);
 	
-	function make_maps(error, gdppercountry, happinessindex)
-	{
+	function make_maps(error, gdppercountry, happinessindex) {
+		// first checking for error and then making both visualisations
 		if (error) throw error;
 		make_chloropleth();
 		make_scatterplot(gdppercountry, happinessindex);
 	}
 	
+	// the function that makes the chloropleth
 	function make_chloropleth(){
 		
 		var chloropleth = new Datamap({
-		element: document.getElementById('container'),
-		projection: 'mercator',
-		fills: {
-			GDP0_5: '#fee5d9',
-			GDP5_20: '#fcae91',
-			GDP20_30: '#fb6a4a',
-			GDP30_40: '#de2d26',
-			GDP40_X: '#a50f15',
-			defaultFill: '#aaaaaa'
-		},
-		dataUrl: 'gdppercountry.csv',
-		dataType: 'csv',
-		data: {},
-		geographyConfig: {
-				highlightOnHover: true,
-				highlightFillColor: '#5e2b2b',
-				popupTemplate: function(geo, data) {
-					return ['<div class="hoverinfo"><strong>',
-							geo.properties.name + ': $' + data.GDP + ' per capita',
-							'</strong></div>'].join('');
+			element: document.getElementById('container'),
+			projection: 'mercator',
+			fills: {
+				GDP0_5: '#fee5d9',
+				GDP5_20: '#fcae91',
+				GDP20_30: '#fb6a4a',
+				GDP30_40: '#de2d26',
+				GDP40_X: '#a50f15',
+				defaultFill: '#aaaaaa'
+			},
+			dataUrl: 'gdppercountry.csv',
+			dataType: 'csv',
+			data: {},
+			geographyConfig: {
+					highlightOnHover: true,
+					highlightFillColor: '#5e2b2b',
+					popupTemplate: function(geo, data) {
+						return ['<div class="hoverinfo"><strong>',
+								geo.properties.name + ': $' + data.GDP + ' per capita',
+								'</strong></div>'].join('');
+					}
 				}
-			}
 		});	
 		
+		// draw the legend
 		chloropleth.legend({
 			legendTitle: "GDP per capita in USD",
 			defaultFillName: "No data",
@@ -70,6 +72,27 @@ window.onload = function() {
 		});
 	};
 	
+	// initial x-axis and add slider to the page
+	var x_range_max = 100000;
+	var x_range_min = 0;
+	
+	var slider = new Slider("#slider", {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}
+	});
+	
+	// eventlistener for when the slider updates and draw new scatterplot
+	slider.on("slideStop", update_scattterplot);
+	function update_scattterplot(){
+		d3.select(".scatterplot_g").remove();
+		values = slider.getValue();
+		x_range_min = values[0];
+		x_range_max = values[1];
+		make_scatterplot();
+	};
+	
+	// this function makes the scatterplot
 	function make_scatterplot(happinessindex){
 		
 		// set margins and size of the scatterplot
@@ -88,13 +111,14 @@ window.onload = function() {
 			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + + margin.top + margin.bottom)
 		  .append("g")
+			.attr("class", "scatterplot_g")
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 		
 		// add the tooltip
 		var tooltip = d3.select("#scatterplotcontainer").append("div")
 			.attr("class", "tooltip")
 			.style("opacity", 0);	
-			
+				
 		// load data
 		d3.csv("happinessindex.csv", function(error, data) {
 			if (error) throw error;
@@ -104,7 +128,7 @@ window.onload = function() {
 				d.Happiness = +d.Happiness;
 			});
 			
-			x.domain(d3.extent(data, function(d) { return d.GDP; })).nice();
+			x.domain([x_range_min, x_range_max]);
 			y.domain([0, 10]);
 			
 			// x-axis
@@ -154,6 +178,8 @@ window.onload = function() {
 					.duration(500)
 					.style("opacity", 0);
 			});
+			
 		});
 	};
+		
 };

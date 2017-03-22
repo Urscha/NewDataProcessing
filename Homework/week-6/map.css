@@ -1,6 +1,6 @@
 /*
 Urscha Fajdiga 11377437
-This file is styles the map.html page
+This file is styles the map.html page, storytelling.html and design.html
 */
 body {text-align: center; font-family: verdana; font-size: 12px}
 
@@ -25,3 +25,5 @@ li {text-align: left}
 .bg-4 { background-color: #2f2f2f; color: #fff; bottom: 0; width: 100%; padding-top: 10px}
 
 .storytelling {width: 700px; margin: auto}
+
+#explanation {text-align: left}
