@@ -4,21 +4,13 @@ This file is styles the map.html page, storytelling.html and design.html
 */
 body {text-align: center; font-family: verdana; font-size: 12px}
 
-h1 {color: grey; text-align:center; font-family: verdana}
+h1 {color: grey}
 
-h2 {color: dark-grey; text-align:center; font-family: verdana; font-size: 15px}
-
-p {text-align: center; font-family: verdana; font-size: 12px}
-
-.datamaps-legend {width: 180px; position: relative; margin-top: -200px}
-
-.datasource {text-align: left; width: 150px}
+h2 {color: dark-grey; font-size: 15px}
 
 li {text-align: left}
 
-#container {width: 1053px; position: relative; height: 800px; margin: auto}
-
-#extra_text {padding-top: 50px; align: center; width: 750px; margin: auto}
+.datamaps-legend {width: 180px; position: relative; margin-top: -200px}
 
 .tooltip { position: absolute; width: 150px; height: 28px; pointer-events: none; text-align: left}
 
@@ -26,4 +18,8 @@ li {text-align: left}
 
 .storytelling {width: 700px; margin: auto}
 
-#explanation {text-align: left}
+.left {text-align: left}
+
+#container {width: 1053px; position: relative; height: 800px; margin: auto}
+
+#extra_text {padding-top: 50px; align: center; width: 750px; margin: auto}

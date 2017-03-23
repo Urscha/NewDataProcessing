@@ -75,7 +75,6 @@ window.onload = function() {
 	// initial x-axis and add slider to the page
 	var x_range_max = 100000;
 	var x_range_min = 0;
-	
 	var slider = new Slider("#slider", {
 		formatter: function(value) {
 			return 'Current value: ' + value;

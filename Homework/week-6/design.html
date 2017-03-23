@@ -23,16 +23,16 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="map.html">Urscha's visualisations</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="map.html">Home</a></li>
-      <li><a href="storytelling.html">Storytelling</a></li>
-      <li class="active"><a href="design.html">Design choices</a></li>
-    </ul>
-  </div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="map.html">Urscha's visualisations</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="map.html">Home</a></li>
+			<li><a href="storytelling.html">Storytelling</a></li>
+			<li class="active"><a href="design.html">Design choices</a></li>
+		</ul>
+	</div>
 </nav>
 
 <!-- First Container -->
@@ -44,6 +44,7 @@
 			<li>Fist step in the design process was to design the page. I decided to put the title at the top and change the font. Below that 
 			i decided to put both graphs. I decided to put them below each other because in that way, the choropleth could be big enough to still
 			see the smaller countries. </li>
+			<li>For the overall website design, I choose to keep the same font everywhere and keep a very minimal style without too much color (besides the visualizations).</li>
 			<li>When I designed the choropleth, I used the color brewer to get 5 sequential colors because the data of the GDP is sequential. When I first
 			made the choropleth, I made took the maximum and minimum value of the GDP per country and divided it by 5 to get the groups. But then most countries 
 			fell in the first two groups. Therefore I changed the range for the data groups so that the countries were more evenly divided over the 'colors'.</li>
@@ -52,6 +53,8 @@
 			<li>After designing the choropleth, I made the scatterplot. In order to reduce data-ink ratio, I made a basic scatterplot. I choose black for the 
 			color of the dots, but the highlighted dots are red, to stick to the color scheme of the choropleth. I made the dots not too big and not too small 
 			because you have to be able to hover over them (to show the tooltip) but if they are too big, the highlighted doesn't stand out as much.</li>
+			<li>I added a slider below the scatterplot. I think this is the most userfriendly place to put the slider since it is right under the x-axis, 
+			which is what the slider is used for to manipulate.</li>
 			<li>At the bottom of the page I added some text to explain the visualisations, as well as the links to the data sources I used. </li>
 		</ul>
 		<h2>Interaction design</h2>
@@ -59,14 +62,23 @@
 			<li>The interaction I used is that when you click on a country in the choropleth, the dot in the scatterplot of that country is highlighted. In that way
 			you can see how that country is located when looking at GDP per country compared to other countries in the world and also how the inhabitants of that country
 			rate their happiness. So when the country is clicked, the style of the dot that was clicked before is changed back to black and the current
-			country becomes red.</li>
+			country becomes red. The visualizations communicate because the country code in both datasets is the same, so when a country is clicked, it searches for the dot
+			with the class equal to the country code of the country that is clicked and then changes the style of that dot.</li>
+			<li>The second interaction I made was the slider. The slider allows the user to zoom in on a specific part of the scatterplot. Since, when completely zoomed
+			out, most of the dots are located on the lift (the lower GDP per capita countries), I wanted to add the slider so you can 'filter' out the richer countries and
+			only look at that left side of the scatterplot to get a better view of the relationship between the variables.</li>
+			<li>I also made hover events for both of the visualizations. For the choropleth, if you hover over a country, the country becomes darker and the tooltip comes up
+			with more information about the country. For the scatterplot, I also made a tooltip. But the tooltip comes up below the x-axis since there was some trouble with 
+			positioning the tooltip over the svg. I would have put it next to the dot if I knew how to do that, to make it more user-friendly.</li>
+			<li>The last interaction I made was the navbar on top of all pages, to easily switch between the pages and because having all the information below the visualizations
+			was too much (I think) :).</li>
 		</ul>
 		</div>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+	S<p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
 
 </body>
